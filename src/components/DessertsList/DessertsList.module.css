@@ -1,0 +1,39 @@
+.dessertsContainer {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.dessertsContainer h1 {
+  margin-left: 22px;
+  margin-top: 0;
+  font-size: 2.4rem;
+  font-family: "MainFont-bold", sans-serif;
+  font-weight: 700;
+}
+.dessertsContainer ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+
+/* flex-wrap activates on <ul> hence why: */
+@media (max-width: 1710px) {
+  .dessertsContainer h1 {
+    margin-left: 12%;
+  }
+}
+
+/* flex-wrap activates on <ul> hence why: */
+@media (max-width: 1227px) {
+  .dessertsContainer h1 {
+    margin-left: 5%;
+  }
+}

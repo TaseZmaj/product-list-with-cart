@@ -1,0 +1,99 @@
+div.orderTotalContainer > div {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.info {
+  /* Order Total   $00.00*/
+  width: 85%;
+  margin-bottom: auto;
+
+  height: 60px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  display: flex;
+  align-items: center;
+}
+div.info h2 {
+  margin: 0 0 0 auto;
+  font-family: "Mainfont-Bold", sans-serif;
+  color: var(--Rose900);
+}
+div.orderTotalContainer ul {
+  /* padding: 0 40px; */
+  box-sizing: border-box;
+  width: 85%;
+  max-height: 250px;
+  padding: 0 20px;
+  margin: auto;
+  overflow-y: auto;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+div.orderTotalContainer ul::-webkit-scrollbar {
+  background-color: white;
+  width: 9px;
+}
+div.orderTotalContainer ul::-webkit-scrollbar-thumb {
+  background-color: var(--Rose100);
+  border-radius: 100vw;
+}
+div.btnContainer img {
+  padding: 3px;
+  border-radius: 50%;
+  border: 2px solid var(--Rose400);
+  cursor: pointer;
+  width: 12px;
+  transition: all 0.2s ease;
+}
+div.btnContainer img:hover {
+  border-color: var(--Rose900);
+  filter: invert(10%) sepia(100%) saturate(500%) hue-rotate(7deg)
+    brightness(30%) contrast(120%);
+}
+ul.cartList {
+  background-color: var(--Rose50);
+}
+div.cartList {
+  background-color: var(--Rose50);
+}
+
+div.orderTotalContainer ul.cartList::-webkit-scrollbar {
+  background-color: var(--Rose50);
+  width: 9px;
+  border-top-right-radius: 100%;
+}
+div.orderTotalContainer ul.cartList::-webkit-scrollbar-track {
+  margin-block: 0.4em;
+}
+div.orderTotalContainer ul.cartList::-webkit-scrollbar-thumb {
+  background-color: var(--Rose100);
+  border-radius: 100vw;
+}
+
+/* Tablet */
+@media (max-width: 912px) {
+  div.info {
+    margin-bottom: 10px;
+  }
+  div.info p {
+    font-size: 1.3rem;
+  }
+  div.info h2 {
+    font-size: 1.8rem;
+  }
+}
+/* Tiny Mobile */
+@media (max-width: 340px) {
+  div.info h2 {
+    font-size: 1.5rem;
+  }
+}

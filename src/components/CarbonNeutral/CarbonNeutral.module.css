@@ -1,0 +1,19 @@
+.carbonContainer {
+  /* width: 280px; */
+  width: 70%;
+  height: 35px;
+
+  padding: 5px 10px;
+  margin: 12px 0;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background-color: var(--Rose50);
+  user-select: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carbonContainer img {
+  margin-right: 5px;
+}
